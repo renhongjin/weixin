@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/icon/icon"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "轻应用导航",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },{
+      "pagePath": "pages/list/list",
+      "text": "热门"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}
+

@@ -1,0 +1,13 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">小程序从{{userInfo.nickName}}开始</text>
+  </view>
+  <view>
+    <button type="primary" bindtap="gotoList" class="begin">开始</button>
+<!--    <button type="primary" bindtap="gotoIcon" class="icon">icon</button>-->
+  </view>
+</view>

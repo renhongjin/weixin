@@ -1,0 +1,31 @@
+<view class="item searct-item">
+    <input class="search-input" type="text" maxlength="100" confirm-type="search" bindinput="search" placeholder="search" auto-focus/>
+</view>
+<block wx:for-items="{{minaList}}">
+    <view class="item">
+        <view class="minaitem" style="flex-direction:row;">
+            <view class="logo">
+                    <image class="image" src="{{item.img}}"></image>
+            </view>
+            <view style="flex-direction:column;" class="mina-info">
+                <view class="mina-name">
+                    <text selectable="true">{{item.name}}</text>
+                </view>
+                <view class="mina-click-time">
+                    <text>{{item.useTime}}次</text>
+                </view>
+                <view class="mina-tag">
+                    <block wx:for-items="{{item.tags}}">
+                        <label class="mina-tag-name">{{item.name}}</label>
+                    </block>
+                </view>
+            </view>
+            <view class="mina-go">
+                <navigator class="mina-use"  bindtap="use">使用</navigator>
+            </view>
+        </view>
+        <view class="mina-desc">
+            <text selectable="true">{{item.desc}}</text>
+        </view>
+    </view>
+</block>
