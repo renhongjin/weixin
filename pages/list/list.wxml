@@ -18,7 +18,7 @@
                     <block wx:for-items="{{item.tags}}">
                         <label class="mina-tag-name">{{item.name}}</label>
                     </block>
-                </view>
+                </view> 
             </view>
             <view class="mina-go">
                 <navigator class="mina-use"  bindtap="use">使用</navigator>
